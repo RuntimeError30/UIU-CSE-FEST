@@ -1,114 +1,109 @@
 <script>
-  import { onMount } from 'svelte';
-  import { fade, scale } from 'svelte/transition';
+	import { onMount } from 'svelte';
+	import { fade, scale } from 'svelte/transition';
 
-  let lastScrollTop = 0;
-  let isScrollingUp = true;
-  let isShown = false;
+	let lastScrollTop = 0;
+	let isScrollingUp = true;
+	let isShown = false;
 
-  function handleScroll() {
-    const currentScrollTop = window.scrollY;
-    isScrollingUp = currentScrollTop <= lastScrollTop;
-    lastScrollTop = currentScrollTop;
-  }
+	function handleScroll() {
+		const currentScrollTop = window.scrollY;
+		isScrollingUp = currentScrollTop <= lastScrollTop;
+		lastScrollTop = currentScrollTop;
+	}
 
-  function toggleVisibility() {
-    isShown = !isShown;
-  }
+	function toggleVisibility() {
+		isShown = !isShown;
+	}
 
-  onMount(() => {
-    window.addEventListener('scroll', handleScroll);
-    return () => window.removeEventListener('scroll', handleScroll);
-  });
+	onMount(() => {
+		window.addEventListener('scroll', handleScroll);
+		return () => window.removeEventListener('scroll', handleScroll);
+	});
 </script>
 
-
-
-
-
-
 <section
-  class={`fixed inset-0 transition-transform bg-black/40 backdrop-blur-lg duration-[900ms] ${isScrollingUp ? 'translate-y-0' : '-translate-y-full'}`}
+	class={`fixed inset-0 transition-transform bg-black/40 backdrop-blur-lg duration-[900ms] ${isScrollingUp ? 'translate-y-0' : '-translate-y-full'}`}
 >
-  <nav class="px-10 flex justify-between items-center">
-    <div class="font-bold">
-      <img src="/logoblack.png" class="w-32" alt="Logo" />
-    </div>
-    <ul class="flex space-x-16 items-center text-sm">
-      <li>
-        <button on:click={toggleVisibility}>
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="24"
-            height="24"
-            viewBox="0 0 24 24"
-            fill="none"
-            stroke="currentColor"
-            stroke-width="1.5"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            class="lucide lucide-menu"
-          >
-            <line x1="4" x2="20" y1="12" y2="12" />
-            <line x1="4" x2="20" y1="6" y2="6" />
-            <line x1="4" x2="20" y1="18" y2="18" />
-          </svg>
-        </button>
-      </li>
-    </ul>
-  </nav>
+	<nav class="px-10 flex justify-between items-center">
+		<div class="font-bold">
+			<img src="/logoblack.png" class="w-32" alt="Logo" />
+		</div>
+		<ul class="flex space-x-16 items-center text-sm">
+			<li>
+				<button on:click={toggleVisibility}>
+					<svg
+						xmlns="http://www.w3.org/2000/svg"
+						width="24"
+						height="24"
+						viewBox="0 0 24 24"
+						fill="none"
+						stroke="currentColor"
+						stroke-width="1.5"
+						stroke-linecap="round"
+						stroke-linejoin="round"
+						class="lucide lucide-menu"
+					>
+						<line x1="4" x2="20" y1="12" y2="12" />
+						<line x1="4" x2="20" y1="6" y2="6" />
+						<line x1="4" x2="20" y1="18" y2="18" />
+					</svg>
+				</button>
+			</li>
+		</ul>
+	</nav>
 </section>
 
 {#if isShown}
-  <div class="fixed z-10 w-full flex justify-center">
-    <div
-      in:fade={{ duration: 300 }}
-      out:fade={{ duration: 200 }}
-      class="absolute grid w-[40%] top-10 h-[50rem] bg-black/50 backdrop-blur-xl rounded-3xl p-10 overflow-hidden z-10"
-    >
-      <div class="w-full h-fit flex justify-end">
-        <button class="border border-white/30 p-5" on:click={toggleVisibility}>
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="24"
-            height="24"
-            viewBox="0 0 24 24"
-            fill="none"
-            stroke="#ffffff"
-            stroke-width="2"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            class="lucide lucide-x"
-          >
-            <path d="M18 6 6 18" />
-            <path d="m6 6 12 12" />
-          </svg>
-        </button>
-      </div>
-      <div>
-        <h1>UIU CSE FEST 2025</h1>
-        <h1 class="text-7xl font-extrabold">Menu</h1>
-      </div>
-      <div>
-        <ul class="space-y-5 text-xl">
-          <li><a href="">Home</a></li>
-          <li><a href="">About</a></li>
-          <li><a href="">Events</a></li>
-          <li><a href="">Announcements</a></li>
-          <li><a href="">FAQ</a></li>
-          <li><a href="">Contact</a></li>
-        </ul>
-      </div>
-    </div>
-  </div>
+	<div class="fixed z-10 w-full flex justify-center">
+		<div
+			in:fade={{ duration: 300 }}
+			out:fade={{ duration: 200 }}
+			class="absolute grid w-[40%] top-10 h-[50rem] bg-black/50 backdrop-blur-xl rounded-3xl p-10 overflow-hidden z-10"
+		>
+			<div class="w-full h-fit flex justify-end">
+				<button class="border border-white/30 p-5" on:click={toggleVisibility}>
+					<svg
+						xmlns="http://www.w3.org/2000/svg"
+						width="24"
+						height="24"
+						viewBox="0 0 24 24"
+						fill="none"
+						stroke="#ffffff"
+						stroke-width="2"
+						stroke-linecap="round"
+						stroke-linejoin="round"
+						class="lucide lucide-x"
+					>
+						<path d="M18 6 6 18" />
+						<path d="m6 6 12 12" />
+					</svg>
+				</button>
+			</div>
+			<div>
+				<h1>UIU CSE FEST 2025</h1>
+				<h1 class="text-7xl font-extrabold">Menu</h1>
+			</div>
+			<div>
+				<ul class="space-y-5 text-xl">
+					<li><a href="">Home</a></li>
+					<li><a href="">About</a></li>
+					<li><a href="">Events</a></li>
+					<li><a href="">Announcements</a></li>
+					<li><a href="">FAQ</a></li>
+					<li><a href="">Contact</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
 {/if}
 
 <style>
-  section {
-    top: 0;
-    left: 0;
-    width: 100%;
-    z-index: 10;
-    height: fit-content;
-  }
+	section {
+		top: 0;
+		left: 0;
+		width: 100%;
+		z-index: 10;
+		height: fit-content;
+	}
 </style>

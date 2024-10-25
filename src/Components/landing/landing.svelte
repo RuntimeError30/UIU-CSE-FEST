@@ -21,10 +21,10 @@
 	};
 </script>
 
-<section class="w-full">
+<section class="w-full ">
 	<div class="flare"></div>
 
-	<div class="flex justify-between align-baseline mb-[200rem]">
+	<div class="flex justify-between align-baseline mb-[30rem]">
 		<div class="p-14 align-center justify-between relative top-60">
 			<div class="flex">
 				<h1 class="text-[10rem] font-black w-[70%] leading-[8rem]">UIU CSE FEST 2025</h1>
@@ -53,6 +53,245 @@
 			</div>
 		</div>
 	</div>
+
+	<div class="w-full mt-10 p-10 mb-[40rem]">
+		<!-- <div class="flare2"></div> -->
+
+		<div class=" grid justify-center w-full text-middle" style="z-index:50;">
+			<h1 class="font-black w-full flex justify-center text-[5rem]">About Us</h1>
+			<h1 class="mt-5 flex text-lg justify-center text-center">
+				Welcome to UIU CSE Fest 2025, where the brightest minds come together to showcase their
+				skills, solve real-world problems, and push the boundaries of technology! This year, we
+				present six thrilling events across programming, software, and robotics, offering a platform
+				for both university and college students to shine.
+			</h1>
+		</div>
+
+		<div class=" flex space-x-10 justify-center mt-20" style="z-index:50;">
+			<img
+				src="uiu1.jpg"
+				class="w-1/4 rounded-xl opacity-60 hover:opacity-100 transition-all border border-white/30 aspect-square"
+				alt=""
+			/>
+			<img
+				src="uiu2.jpg"
+				class="w-1/4 rounded-xl opacity-60 hover:opacity-100 transition-all border border-white/30 translate-y-20 aspect-square"
+				alt=""
+			/>
+			<img
+				src="uiu3.jpg"
+				class="w-1/4 rounded-xl opacity-60 hover:opacity-100 transition-all border border-white/30 aspect-square"
+				alt=""
+			/>
+		</div>
+
+		<!-- <table class="w-full ">
+			<tr class="border ">
+				<h1 class="p-5 text-start font-black w-full flex justify-center text-[5rem]">About Us</h1></tr
+			>
+			<tr class="">
+				<td class="border w-fit"><img src="uiu2.jpg" class="w-1/2 rounded-xl opacity-90  hover:opacity-100 transition-all border border-white/30 " alt=""></td>
+				<td>kjfjdkfnj</td>
+			</tr>
+		</table> -->
+	</div>
+
+	<div class="mt-20 p-10">
+		<div class=" grid w-full" style="z-index:50;">
+			<h1 class="font-black w-full text-[5rem]">Events</h1>
+
+			<div class="flex w-full border-b-2 rounded-xl border-white/30 h-[15rem] items-center px-5">
+				<h1 class="text-2xl border-b-2 border-white opacity-50 font-semibold mr-10">01</h1>
+				<div class="w-full">
+									<h1 class="text-4xl w-full font-bold">
+					1st UIU Inter University Programming Contest (UIU IUPC 2024)
+				</h1>
+				<h1 class="">University Level</h1> 
+				</div>
+				<button class="p-3 rounded-full border  aspect-square">
+					<svg
+						xmlns="http://www.w3.org/2000/svg"
+						fill="none"
+						viewBox="0 0 24 24"
+						stroke-width="1.5"
+						stroke="currentColor"
+						class="size-10 w-full"
+					>
+						<path
+							stroke-linecap="round"
+							stroke-linejoin="round"
+							d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3"
+						/>
+					</svg>
+				</button>
+			</div>
+
+			<div
+				class="flex w-full aspect-video h-[15rem] items-center justify-between px-5 bg-clip-content border-b border-white/40 rounded-xl"
+			>
+				<img src="wave2.jpg" class="absolute -z-50 blur-sm w-[95%]" alt="" />
+				<!-- Left section for number and title -->
+				<div class="flex items-center">
+					<h1 class="text-2xl border-b-2 border-white opacity-80 font-semibold mr-10 text-white">
+						02
+					</h1>
+
+					<div>
+						<h1 class="text-4xl font-bold text-white">Blockchain Olympiad</h1>
+						<h1 class="text-lg text-gray-300 mt-2">University Level</h1>
+					</div>
+				</div>
+
+				<!-- Right section for button -->
+				<button
+					class="p-3 rounded-full border  aspect-square"
+				>
+					<svg
+						xmlns="http://www.w3.org/2000/svg"
+						fill="none"
+						viewBox="0 0 24 24"
+						stroke-width="1.5"
+						stroke="currentColor"
+						class="w-10 h-10"
+					>
+						<path
+							stroke-linecap="round"
+							stroke-linejoin="round"
+							d="M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3"
+						/>
+					</svg>
+				</button>
+			</div>
+
+			<div class="flex w-full border-b-2 rounded-xl border-white/30 h-[15rem] items-center px-5">
+				<h1 class="text-2xl border-b-2 border-white opacity-50 font-semibold mr-10">03</h1>
+				<div class="w-full">
+					<h1 class="text-4xl w-full font-bold">Project Show</h1>
+				<h1 class="">University Level</h1>
+				</div>
+				<button class="p-3 rounded-full border aspect-square">
+					<svg
+						xmlns="http://www.w3.org/2000/svg"
+						fill="none"
+						viewBox="0 0 24 24"
+						stroke-width="1.5"
+						stroke="currentColor"
+						class="size-10 w-full"
+					>
+						<path
+							stroke-linecap="round"
+							stroke-linejoin="round"
+							d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3"
+						/>
+					</svg>
+				</button>
+			</div>
+
+
+
+			<div
+				class="flex w-full aspect-video  h-[15rem] items-center justify-between px-5 bg-clip-content border-b border-white/30 rounded-xl"
+			>
+			<img src="wave2.jpg" class="absolute -z-50 blur-sm w-[95%]" alt="">
+				<!-- Left section for number and title -->
+				<div class="flex items-center">
+					<h1 class="text-2xl border-b-2 border-white opacity-80 font-semibold mr-10 text-white">
+						04
+					</h1>
+					
+					<div>
+						<h1 class="text-4xl font-bold text-white">ICT Olympiad</h1>
+						<h1 class="text-lg text-gray-300 mt-2">College Level</h1>
+					</div>
+				</div>
+
+				<!-- Right section for button -->
+				<button
+					class="p-3 rounded-full border aspect-square"
+				>
+					<svg
+						xmlns="http://www.w3.org/2000/svg"
+						fill="none"
+						viewBox="0 0 24 24"
+						stroke-width="1.5"
+						stroke="currentColor"
+						class="w-10 h-10"
+					>
+						<path
+							stroke-linecap="round"
+							stroke-linejoin="round"
+							d="M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3"
+						/>
+					</svg>
+				</button>
+			</div>
+
+
+
+
+						<div class="flex w-full border-b-2 rounded-xl border-white/30 h-[15rem] items-center px-5">
+				<h1 class="text-2xl border-b-2 border-white opacity-50 font-semibold mr-10">05</h1>
+				<div class="w-full">
+					<h1 class="text-4xl w-full font-bold">Soccer Bot Competition</h1>
+				<h1 class="">University & College</h1>
+				</div>
+				<button class="p-3 rounded-full border aspect-square">
+					<svg
+						xmlns="http://www.w3.org/2000/svg"
+						fill="none"
+						viewBox="0 0 24 24"
+						stroke-width="1.5"
+						stroke="currentColor"
+						class="size-10 w-full"
+					>
+						<path
+							stroke-linecap="round"
+							stroke-linejoin="round"
+							d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3"
+						/>
+					</svg>
+				</button>
+			</div>
+
+
+						<div
+				class="flex w-full aspect-video  h-[15rem] items-center justify-between px-5 bg-clip-content border-b border-white/30 rounded-xl"
+			>
+			<img src="wave2.jpg" class="absolute -z-50 blur-sm w-[95%]" alt="">
+				<!-- Left section for number and title -->
+				<div class="flex items-center">
+					<h1 class="text-2xl border-b-2 border-white opacity-80 font-semibold mr-10 text-white">
+						06
+					</h1>
+					
+					<div>
+						<h1 class="text-4xl font-bold text-white">Line Follower Robot (LFR) Competition</h1>
+						<h1 class="text-lg text-gray-300 mt-2">University & College</h1>
+					</div>
+				</div>
+
+				<!-- Right section for button -->
+				<button
+					class="p-3 rounded-full border aspect-square"
+				>
+					<svg
+						xmlns="http://www.w3.org/2000/svg"
+						fill="none"
+						viewBox="0 0 24 24"
+						stroke-width="1.5"
+						stroke="currentColor"
+						class="w-10 h-10"
+					>
+						<path
+							stroke-linecap="round"
+							stroke-linejoin="round"
+							d="M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3"
+						/>
+					</svg>
+				</button>
+			</div>
+		</div>
+	</div>
 </section>
 
 <style>
@@ -68,6 +307,17 @@
 		animation: flareAnimation 30s infinite ease-in-out;
 		filter: blur(55px);
 	}
+	/* .flare2 {
+		width: 160rem;
+		height: 160rem;
+		display: flex;
+		position: absolute;
+		justify-content: center;
+
+		background: radial-gradient(#ff5900ce 10%, transparent 20%);
+		z-index: -1;
+		filter: blur(55px);
+	} */
 
 	@keyframes flareAnimation {
 		0% {

@@ -21,7 +21,7 @@
 	};
 </script>
 
-<section class="w-full ">
+<section class="w-full">
 	<div class="flare"></div>
 
 	<div class="flex justify-between align-baseline mb-[30rem]">
@@ -103,12 +103,12 @@
 			<div class="flex w-full border-b-2 rounded-xl border-white/30 h-[15rem] items-center px-5">
 				<h1 class="text-2xl border-b-2 border-white opacity-50 font-semibold mr-10">01</h1>
 				<div class="w-full">
-									<h1 class="text-4xl w-full font-bold">
-					1st UIU Inter University Programming Contest (UIU IUPC 2024)
-				</h1>
-				<h1 class="">University Level</h1> 
+					<h1 class="text-4xl w-full font-bold">
+						1st UIU Inter University Programming Contest (UIU IUPC 2024)
+					</h1>
+					<h1 class="">University Level</h1>
 				</div>
-				<button class="p-3 rounded-full border  aspect-square">
+				<button class="p-3 rounded-full border aspect-square">
 					<svg
 						xmlns="http://www.w3.org/2000/svg"
 						fill="none"
@@ -143,9 +143,7 @@
 				</div>
 
 				<!-- Right section for button -->
-				<button
-					class="p-3 rounded-full border  aspect-square"
-				>
+				<button class="p-3 rounded-full border aspect-square">
 					<svg
 						xmlns="http://www.w3.org/2000/svg"
 						fill="none"
@@ -167,7 +165,7 @@
 				<h1 class="text-2xl border-b-2 border-white opacity-50 font-semibold mr-10">03</h1>
 				<div class="w-full">
 					<h1 class="text-4xl w-full font-bold">Project Show</h1>
-				<h1 class="">University Level</h1>
+					<h1 class="">University Level</h1>
 				</div>
 				<button class="p-3 rounded-full border aspect-square">
 					<svg
@@ -187,18 +185,16 @@
 				</button>
 			</div>
 
-
-
 			<div
-				class="flex w-full aspect-video  h-[15rem] items-center justify-between px-5 bg-clip-content border-b border-white/30 rounded-xl"
+				class="flex w-full aspect-video h-[15rem] items-center justify-between px-5 bg-clip-content border-b border-white/30 rounded-xl"
 			>
-			<img src="wave2.jpg" class="absolute -z-50 blur-sm w-[95%]" alt="">
+				<img src="wave2.jpg" class="absolute -z-50 blur-sm w-[95%]" alt="" />
 				<!-- Left section for number and title -->
 				<div class="flex items-center">
 					<h1 class="text-2xl border-b-2 border-white opacity-80 font-semibold mr-10 text-white">
 						04
 					</h1>
-					
+
 					<div>
 						<h1 class="text-4xl font-bold text-white">ICT Olympiad</h1>
 						<h1 class="text-lg text-gray-300 mt-2">College Level</h1>
@@ -206,9 +202,7 @@
 				</div>
 
 				<!-- Right section for button -->
-				<button
-					class="p-3 rounded-full border aspect-square"
-				>
+				<button class="p-3 rounded-full border aspect-square">
 					<svg
 						xmlns="http://www.w3.org/2000/svg"
 						fill="none"
@@ -226,14 +220,11 @@
 				</button>
 			</div>
 
-
-
-
-						<div class="flex w-full border-b-2 rounded-xl border-white/30 h-[15rem] items-center px-5">
+			<div class="flex w-full border-b-2 rounded-xl border-white/30 h-[15rem] items-center px-5">
 				<h1 class="text-2xl border-b-2 border-white opacity-50 font-semibold mr-10">05</h1>
 				<div class="w-full">
 					<h1 class="text-4xl w-full font-bold">Soccer Bot Competition</h1>
-				<h1 class="">University & College</h1>
+					<h1 class="">University & College</h1>
 				</div>
 				<button class="p-3 rounded-full border aspect-square">
 					<svg
@@ -253,17 +244,16 @@
 				</button>
 			</div>
 
-
-						<div
-				class="flex w-full aspect-video  h-[15rem] items-center justify-between px-5 bg-clip-content border-b border-white/30 rounded-xl"
+			<div
+				class="flex w-full aspect-video h-[15rem] items-center justify-between px-5 bg-clip-content border-b border-white/30 rounded-xl"
 			>
-			<img src="wave2.jpg" class="absolute -z-50 blur-sm w-[95%]" alt="">
+				<img src="wave2.jpg" class="absolute -z-50 blur-sm w-[95%]" alt="" />
 				<!-- Left section for number and title -->
 				<div class="flex items-center">
 					<h1 class="text-2xl border-b-2 border-white opacity-80 font-semibold mr-10 text-white">
 						06
 					</h1>
-					
+
 					<div>
 						<h1 class="text-4xl font-bold text-white">Line Follower Robot (LFR) Competition</h1>
 						<h1 class="text-lg text-gray-300 mt-2">University & College</h1>
@@ -271,9 +261,7 @@
 				</div>
 
 				<!-- Right section for button -->
-				<button
-					class="p-3 rounded-full border aspect-square"
-				>
+				<button class="p-3 rounded-full border aspect-square">
 					<svg
 						xmlns="http://www.w3.org/2000/svg"
 						fill="none"

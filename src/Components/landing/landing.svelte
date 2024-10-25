@@ -1,20 +1,19 @@
 <script>
-  import { gsap } from "gsap";
-
-  let scrollY = 0;
-  let ticker;
-
-  // Scroll and move text using GSAP
-  window.addEventListener('scroll', () => {
-    scrollY = -2 * window.scrollY; // Adjust the scroll factor for speed
-    gsap.to(ticker, { x: scrollY, ease: "power1.out", duration: 0.1 });
-  });
 </script>
 
-<section>
-    <div>
-        <h1 bind:this={ticker} style="font-weight: 900; font-size: 15rem; white-space: nowrap;">UIU CSE FEST 2025 UIU CSE FEST 2025 UIU CSE FEST 2025</h1>
-        <h1 style="display: flex; justify-content: center; font-size: 2rem;">Scroll to continue</h1>
-    </div>
-</section>
+<section class=" overflow-x-hidden">
 
+	<div class=" flex sbsolute">
+
+		<div class="mt-40 ">
+			<h1 class="ticker font-black text-[10rem]">UIU CSE FEST 2025</h1>
+
+			<h1 class=" text-xl">Innovate, Compete, Excel – The Future Begins at UIU CSE Fest 2025</h1>
+		</div>
+			<div class="w-[100rem] h-[40rem] bg-gradient-to-bl from-[#ec71058e] via-[#0f0900] to-[#0c0a0f]"></div>
+
+	</div>
+	<div>
+		<div class=""></div>
+	</div>
+</section>

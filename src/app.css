@@ -1,3 +1,14 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+* {
+	font-family: 'Montserrat', serif;
+}
+html {
+	background-color: #0b0b0b;
+	color: white;
+	scroll-behavior: smooth;
+}
+
+  

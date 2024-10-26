@@ -30,7 +30,9 @@
 	},
 	"type": "module",
 	"dependencies": {
+		"@lottiefiles/dotlottie-svelte": "^0.3.22",
 		"gsap": "^3.12.5",
+		"lottie-web": "^5.12.2",
 		"svelte-icons": "^2.1.0"
 	}
 }

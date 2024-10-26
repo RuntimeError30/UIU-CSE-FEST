@@ -1,6 +1,8 @@
 <script>
 	import { gsap } from 'gsap';
 	import { ScrollToPlugin } from 'gsap/ScrollToPlugin';
+	import { DotLottieSvelte } from '@lottiefiles/dotlottie-svelte';
+	import ani4 from '../hero/hehe.lottie';
 
 	gsap.registerPlugin(ScrollToPlugin);
 
@@ -17,38 +19,52 @@
 
 	const handleScrollClick = () => {
 		const section = document.querySelector('section');
-		smoothScroll(section.offsetHeight);
+		if (section) {
+			smoothScroll(section.offsetTop);
+		} else {
+			console.error('Section element not found');
+		}
 	};
 </script>
 
-<section class="w-full">
+<section class="w-full z-50">
 	<div class="flare"></div>
 
 	<div class="flex justify-between align-baseline mb-[30rem]">
-		<div class="p-14 align-center justify-between relative top-60">
-			<div class="flex">
-				<h1 class="text-[10rem] font-black w-[70%] leading-[8rem]">UIU CSE FEST 2025</h1>
-			</div>
-			<div class="flex">
-				<div class="w-full">
-					<h1 class="text-xl mt-6">
-						Innovate, Compete, Excel – The Future Begins at UIU CSE Fest 2025
-					</h1>
+		<div class=" w-full relative">
+			<div class="aspect-video flex justify-center w-full">
+				<div class="w-[60%]">
+					<DotLottieSvelte src={ani4} loop autoplay />
 				</div>
 			</div>
 
-			<div class="flex justify-between mt-16">
-				<!-- Button (optional) -->
-				<button id="btn">Join Now</button>
+			<div class="relative -top-40">
+				<div class="w-full flex justify-center">
+					<h1 class="text-[8rem] font-black w-full flex justify-center leading-[8rem]">
+						UIU CSE FEST 2025
+					</h1>
+				</div>
+				<div class="flex">
+					<div class="w-full">
+						<h1 class="text-xl flex justify-center mt-6">
+							Innovate, Compete, Excel – The Future Begins at UIU CSE Fest 2025
+						</h1>
+					</div>
+				</div>
 
-				<!-- Scroll Indicator -->
-				<!-- svelte-ignore a11y-click-events-have-key-events -->
-				<!-- svelte-ignore a11y-no-static-element-interactions -->
-				<div class="container_mouse mt-10" on:click={handleScrollClick}>
+				<div class="w-full flex justify-center mt-16">
+					<!-- Button (optional) -->
+					<button id="btn" class="">Join Now</button>
+
+					<!-- Scroll Indicator -->
+					<!-- svelte-ignore a11y-click-events-have-key-events -->
+					<!-- svelte-ignore a11y-no-static-element-interactions -->
+					<!-- <div class="container_mouse mt-10" on:click={handleScrollClick}>
 					<span class="mouse-btn">
 						<span class="mouse-scroll"></span>
 					</span>
 					<span class="opacity-50 text-xs">Scroll Down for more</span>
+				</div> -->
 				</div>
 			</div>
 		</div>
@@ -129,7 +145,6 @@
 			<div
 				class="flex w-full aspect-video h-[15rem] items-center justify-between px-5 bg-clip-content border-b border-white/40 rounded-xl"
 			>
-				<img src="wave2.jpg" class="absolute -z-50 blur-sm w-[95%]" alt="" />
 				<!-- Left section for number and title -->
 				<div class="flex items-center">
 					<h1 class="text-2xl border-b-2 border-white opacity-80 font-semibold mr-10 text-white">
@@ -188,7 +203,6 @@
 			<div
 				class="flex w-full aspect-video h-[15rem] items-center justify-between px-5 bg-clip-content border-b border-white/30 rounded-xl"
 			>
-				<img src="wave2.jpg" class="absolute -z-50 blur-sm w-[95%]" alt="" />
 				<!-- Left section for number and title -->
 				<div class="flex items-center">
 					<h1 class="text-2xl border-b-2 border-white opacity-80 font-semibold mr-10 text-white">
@@ -247,7 +261,6 @@
 			<div
 				class="flex w-full aspect-video h-[15rem] items-center justify-between px-5 bg-clip-content border-b border-white/30 rounded-xl"
 			>
-				<img src="wave2.jpg" class="absolute -z-50 blur-sm w-[95%]" alt="" />
 				<!-- Left section for number and title -->
 				<div class="flex items-center">
 					<h1 class="text-2xl border-b-2 border-white opacity-80 font-semibold mr-10 text-white">
@@ -279,6 +292,10 @@
 				</button>
 			</div>
 		</div>
+	</div>
+
+	<div>
+		<img src="wave2.jpg" alt="" />
 	</div>
 </section>
 

@@ -2,7 +2,7 @@
 	import { gsap } from 'gsap';
 	import { ScrollToPlugin } from 'gsap/ScrollToPlugin';
 	import { DotLottieSvelte } from '@lottiefiles/dotlottie-svelte';
-	import ani4 from '../hero/hehe.lottie';
+	import ani5 from '../hero/mate.lottie';
 
 	gsap.registerPlugin(ScrollToPlugin);
 
@@ -28,43 +28,39 @@
 </script>
 
 <section class="w-full z-50">
-	<div class="flare"></div>
-
 	<div class="flex justify-between align-baseline mb-[30rem]">
-		<div class=" w-full relative">
-			<div class="aspect-video flex justify-center w-full">
-				<div class="w-[60%]">
-					<DotLottieSvelte src={ani4} loop autoplay />
-				</div>
-			</div>
+		<div class="flare"></div>
 
-			<div class="relative -top-40">
-				<div class="w-full flex justify-center">
-					<h1 class="text-[8rem] font-black w-full flex justify-center leading-[8rem]">
-						UIU CSE FEST 2025
-					</h1>
-				</div>
-				<div class="flex">
-					<div class="w-full">
-						<h1 class="text-xl flex justify-center mt-6">
-							Innovate, Compete, Excel – The Future Begins at UIU CSE Fest 2025
-						</h1>
+		<div class=" w-full">
+			<div class=" ">
+				<div class=" flex justify-center w-full">
+					<div class="w-[80%]">
+						<DotLottieSvelte src={ani5} loop autoplay width="100" />
 					</div>
 				</div>
+				<div class="-translate-y-32">
+					<div class="w-full flex justify-center">
+						<h1 class="text-[5rem] font-black w-full flex justify-center leading-[8rem]">
+							UIU CSE FEST 2025
+						</h1>
+					</div>
+					<div class="flex -translate-y-10">
+						<div class="w-full">
+							<h1 class="text-xl flex justify-center mt-6">
+								Innovate, Compete, Excel – The Future Begins at UIU CSE Fest 2025
+							</h1>
+						</div>
+					</div>
 
-				<div class="w-full flex justify-center mt-16">
-					<!-- Button (optional) -->
-					<button id="btn" class="">Join Now</button>
+					<div class="w-full flex justify-center mt-16 -translate-y-20">
+						<!-- Button (optional) -->
+						<button id="btn" class="">Join Now</button>
 
-					<!-- Scroll Indicator -->
-					<!-- svelte-ignore a11y-click-events-have-key-events -->
-					<!-- svelte-ignore a11y-no-static-element-interactions -->
-					<!-- <div class="container_mouse mt-10" on:click={handleScrollClick}>
-					<span class="mouse-btn">
-						<span class="mouse-scroll"></span>
-					</span>
-					<span class="opacity-50 text-xs">Scroll Down for more</span>
-				</div> -->
+						<!-- Scroll Indicator -->
+						<!-- svelte-ignore a11y-click-events-have-key-events -->
+						<!-- svelte-ignore a11y-no-static-element-interactions -->
+
+					</div>
 				</div>
 			</div>
 		</div>
@@ -112,7 +108,7 @@
 		</table> -->
 	</div>
 
-	<div class="mt-20 p-10">
+	<div class="mt-20 px-10">
 		<div class=" grid w-full" style="z-index:50;">
 			<h1 class="font-black w-full text-[5rem]">Events</h1>
 
@@ -294,8 +290,12 @@
 		</div>
 	</div>
 
+	<div class="faded-div mb-[30rem]">
+		<img src="wave2.jpg" class="w-full" alt="" />
+	</div>
+
 	<div>
-		<img src="wave2.jpg" alt="" />
+		<h1 class="text-2xl font-black">CLUBS AND PARTNERS</h1>
 	</div>
 </section>
 
@@ -364,34 +364,66 @@
 			0 0 40px #ffffff;
 	}
 
-	/* Scroll Indicator */
-	.mouse-btn {
-		margin: 10px auto;
-		width: 50px;
-		height: 120px;
-		border: 3px solid rgba(122, 122, 124, 0.918);
-		border-radius: 20px;
-		display: flex;
-	}
+.blob {
+  position: absolute;
+  opacity: 0.5;
+  width: 400px;
+  aspect-ratio: 1/1;
+  animation: animate 10s cubic-bezier(0.68, -0.55, 0.27, 1.55) infinite
+    alternate forwards;
+  filter: blur(40px);
+  z-index: -1;
+  background: linear-gradient(
+    47deg,
+    rgba(255, 88, 139, 1) 21%,
+    rgb(0 164 173) 67%,
+    rgba(118, 74, 166, 1) 81%
+  );
 
-	.mouse-scroll {
-		display: block;
-		width: 20px;
-		height: 20px;
-		background: linear-gradient(170deg, rgba(122, 122, 124, 0.918), rgb(123, 124, 124));
-		border-radius: 50%;
-		margin: auto;
-		animation: scrolling13 3s linear infinite;
-	}
+  /*  Optional  */
+  /*   box-shadow: inset 50px 50px 17px 0px #ff588b,
+    inset 100px 100px 17px 0px #66319f; */
+}
 
-	@keyframes scrolling13 {
-		0% {
-			opacity: 0;
-			transform: translateY(-40px);
-		}
-		100% {
-			opacity: 1;
-			transform: translateY(40px);
-		}
-	}
+@keyframes animate {
+  0% {
+    translate: 40% -25%;
+    border-radius: 60% 40% 30% 70% / 100% 85% 92% 74%;
+  }
+  50% {
+    translate: 0% 13%;
+    border-radius: 20% 71% 47% 70% / 81% 15% 22% 54%;
+    rotate: 41deg;
+    scale: 1.15;
+  }
+  100% {
+    translate: -45% 39%;
+    border-radius: 100% 75% 92% 74% / 60% 80% 30% 70%;
+    rotate: -60deg;
+    scale: 1.05;
+  }
+}
+
+.faded-div {
+    position: relative;
+    overflow: hidden; /* Ensures that the gradient overlay is contained within the div */
+}
+
+.faded-div img {
+    display: block; /* Ensures there's no space below the image */
+    width: 100%; /* Makes sure the image takes full width */
+}
+
+.faded-div::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, rgb(0, 0, 0) 100%);
+    pointer-events: none; /* Allows clicks to pass through the overlay */
+}
+
+
 </style>

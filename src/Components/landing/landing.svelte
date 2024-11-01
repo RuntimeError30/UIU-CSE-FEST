@@ -4,7 +4,7 @@
 	import { DotLottieSvelte } from '@lottiefiles/dotlottie-svelte';
 	import ani5 from '../hero/mate.lottie';
 
-	gsap.registerPlugin(ScrollToPlugin);
+	gsap.registerPlugin(ScrollToPlugin); 
 
 	const smoothScroll = (target) => {
 		gsap.to(window, {

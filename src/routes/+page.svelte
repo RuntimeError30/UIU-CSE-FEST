@@ -1,5 +1,8 @@
 <script>
+	import Home from '../Components/landing/home.svelte';
 	import Landing from '../Components/landing/home.svelte';
 </script>
 
-<Landing />
+<main>
+	<Home />
+</main>

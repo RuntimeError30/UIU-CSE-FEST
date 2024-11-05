@@ -4,7 +4,7 @@
 	import { DotLottieSvelte } from '@lottiefiles/dotlottie-svelte';
 	import ani5 from '../hero/mate.lottie';
 
-	gsap.registerPlugin(ScrollToPlugin); 
+	gsap.registerPlugin(ScrollToPlugin);
 
 	const smoothScroll = (target) => {
 		gsap.to(window, {
@@ -59,7 +59,6 @@
 						<!-- Scroll Indicator -->
 						<!-- svelte-ignore a11y-click-events-have-key-events -->
 						<!-- svelte-ignore a11y-no-static-element-interactions -->
-
 					</div>
 				</div>
 			</div>
@@ -364,66 +363,63 @@
 			0 0 40px #ffffff;
 	}
 
-.blob {
-  position: absolute;
-  opacity: 0.5;
-  width: 400px;
-  aspect-ratio: 1/1;
-  animation: animate 10s cubic-bezier(0.68, -0.55, 0.27, 1.55) infinite
-    alternate forwards;
-  filter: blur(40px);
-  z-index: -1;
-  background: linear-gradient(
-    47deg,
-    rgba(255, 88, 139, 1) 21%,
-    rgb(0 164 173) 67%,
-    rgba(118, 74, 166, 1) 81%
-  );
+	.blob {
+		position: absolute;
+		opacity: 0.5;
+		width: 400px;
+		aspect-ratio: 1/1;
+		animation: animate 10s cubic-bezier(0.68, -0.55, 0.27, 1.55) infinite alternate forwards;
+		filter: blur(40px);
+		z-index: -1;
+		background: linear-gradient(
+			47deg,
+			rgba(255, 88, 139, 1) 21%,
+			rgb(0 164 173) 67%,
+			rgba(118, 74, 166, 1) 81%
+		);
 
-  /*  Optional  */
-  /*   box-shadow: inset 50px 50px 17px 0px #ff588b,
+		/*  Optional  */
+		/*   box-shadow: inset 50px 50px 17px 0px #ff588b,
     inset 100px 100px 17px 0px #66319f; */
-}
+	}
 
-@keyframes animate {
-  0% {
-    translate: 40% -25%;
-    border-radius: 60% 40% 30% 70% / 100% 85% 92% 74%;
-  }
-  50% {
-    translate: 0% 13%;
-    border-radius: 20% 71% 47% 70% / 81% 15% 22% 54%;
-    rotate: 41deg;
-    scale: 1.15;
-  }
-  100% {
-    translate: -45% 39%;
-    border-radius: 100% 75% 92% 74% / 60% 80% 30% 70%;
-    rotate: -60deg;
-    scale: 1.05;
-  }
-}
+	@keyframes animate {
+		0% {
+			translate: 40% -25%;
+			border-radius: 60% 40% 30% 70% / 100% 85% 92% 74%;
+		}
+		50% {
+			translate: 0% 13%;
+			border-radius: 20% 71% 47% 70% / 81% 15% 22% 54%;
+			rotate: 41deg;
+			scale: 1.15;
+		}
+		100% {
+			translate: -45% 39%;
+			border-radius: 100% 75% 92% 74% / 60% 80% 30% 70%;
+			rotate: -60deg;
+			scale: 1.05;
+		}
+	}
 
-.faded-div {
-    position: relative;
-    overflow: hidden; /* Ensures that the gradient overlay is contained within the div */
-}
+	.faded-div {
+		position: relative;
+		overflow: hidden; /* Ensures that the gradient overlay is contained within the div */
+	}
 
-.faded-div img {
-    display: block; /* Ensures there's no space below the image */
-    width: 100%; /* Makes sure the image takes full width */
-}
+	.faded-div img {
+		display: block; /* Ensures there's no space below the image */
+		width: 100%; /* Makes sure the image takes full width */
+	}
 
-.faded-div::after {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, rgb(0, 0, 0) 100%);
-    pointer-events: none; /* Allows clicks to pass through the overlay */
-}
-
-
+	.faded-div::after {
+		content: '';
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, rgb(0, 0, 0) 100%);
+		pointer-events: none; /* Allows clicks to pass through the overlay */
+	}
 </style>

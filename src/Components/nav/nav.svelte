@@ -23,11 +23,11 @@
 </script>
 
 <section
-	class={`fixed inset-0 transition-transform bg-black/40 backdrop-blur-lg duration-[900ms] ${isScrollingUp ? 'translate-y-0' : '-translate-y-full'}`}
+	class={`z-50 fixed inset-0 transition-transform backdrop-blur-lg duration-[900ms] ${isScrollingUp ? 'translate-y-0' : '-translate-y-full'}`}
 >
 	<nav class="px-10 flex justify-between items-center">
 		<div class="font-bold">
-			<img src="/logoblack.png" class="w-32" alt="Logo" />
+			<img src="/blacklogo.png" class="w-32" alt="Logo" />
 		</div>
 		<ul class="flex space-x-16 items-center text-sm">
 			<li>

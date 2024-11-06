@@ -29,7 +29,7 @@
 		<div class="font-bold">
 			<img src="/blacklogo.png" class="w-32" alt="Logo" />
 		</div>
-		<ul class="flex space-x-16 items-center text-black text-sm">
+		<ul class="flex space-x-16  items-center text-black text-sm">
 		
 	
 				

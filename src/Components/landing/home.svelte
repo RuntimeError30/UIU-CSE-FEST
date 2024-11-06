@@ -34,7 +34,7 @@
 						style="transform: translateY({titleParallax}px);"
 					>
 						<h1
-							class="text-black flex font-black text-[20rem]"
+							class="text-black flex font-black text-[4rem] md:text-[10rem] lg:text-[20rem]"
 							style="font-family: 'Orbitron', sans-serif;"
 						>
 							UIU <span class="text-[#ff4701]" style="font-family: 'Orbitron', sans-serif;"
@@ -42,7 +42,7 @@
 							>
 						</h1>
 						<h1
-							class="text-black font-black text-[14rem]"
+							class="text-black font-black text-[3rem] md:text-[7rem] lg:text-[14rem]"
 							style="font-family: 'Orbitron', sans-serif;"
 						>
 							<span class="text-[#ff4701]" style="font-family: 'Orbitron', sans-serif;">FEST</span
@@ -67,33 +67,39 @@
 		</section>
 
 		<!-- Black overlay section that fades in with scroll and has parallax effect -->
-		<section style="opacity: {opacity}; " class="min-h-screen">
-			<div class="bg-black w-full flex p-10 text-white mt-20 transition-opacity duration-300">
-				<div class="leading-tight w-full" style="transform: translateY({textParallax}px);">
-					<h1 class="text-white">Welcome to</h1>
-					<h1 class="text-[5rem] font-black">UIU CSE FEST 2025</h1>
-					<h1 class="w-[70%]">
-						Welcome to UIU CSE Fest 2025, a premier event where talent, creativity, and
-						technological prowess come together to make a difference! This year, we're proud to
-						present an exciting lineup of six diverse and engaging events, tailored to inspire and
-						challenge the next generation of tech enthusiasts. UIU CSE Fest is designed to unite the
-						brightest minds from universities and colleges, offering a platform to showcase skills,
-						solve real-world problems, and push the frontiers of innovation. Our events span
-						programming, software development, and robotics, providing unique opportunities for
-						students to dive into competitive coding, prototype development, and robotic design.
-						Each event is crafted to test participants' skills, foster collaboration, and ignite a
-						passion for technology. In addition to rigorous challenges, students will have the
-						chance to connect with industry experts, attend interactive workshops, and engage in
-						knowledge-sharing sessions that broaden their perspectives and enhance their technical
-						know-how. Whether you're here to compete, network, or learn, UIU CSE Fest 2025 promises
-						an unforgettable experience. Join us as we celebrate technology, embrace innovation, and
-						empower the tech leaders of tomorrow. Prepare to challenge yourself and make your mark
-						on the future of technology!
-					</h1>
-				</div>
-				<div class="aspect-square w-1/2" style="transform: translateY({imageParallax}px);">
-					<img src="9910414.png" alt="" />
-				</div>
+		<section
+			style="opacity: {opacity};"
+			class="min-h-screen bg-black w-full text-white flex flex-col-reverse md:flex-row p-5 lg:p-10 mt-10 lg:mt-20"
+		>
+	<!-- <div class="leading-tight w-full" style="transform: translateY({textParallax}px);"></div> -->
+			<!-- Text Section -->
+			<div class="w-full leading-tight max-h-full pb-10">
+				<h1 class="text-white text-xl md:text-3xl">Welcome to</h1>
+				<h1 class="text-[2rem] md:text-[3rem] lg:text-[5rem] font-extrabold">UIU CSE FEST 2025</h1>
+				<p class="text-sm md:text-base lg:text-lg md:w-[70%] mt-4">
+					Welcome to UIU CSE Fest 2025, a premier event where talent, creativity, and technological
+					prowess come together to make a difference! This year, we're proud to present an exciting
+					lineup of six diverse and engaging events, tailored to inspire and challenge the next
+					generation of tech enthusiasts. UIU CSE Fest is designed to unite the brightest minds from
+					universities and colleges, offering a platform to showcase skills, solve real-world
+					problems, and push the frontiers of innovation. Our events span programming, software
+					development, and robotics, providing unique opportunities for students to dive into
+					competitive coding, prototype development, and robotic design. Each event is crafted to
+					test participants' skills, foster collaboration, and ignite a passion for technology. In
+					addition to rigorous challenges, students will have the chance to connect with industry
+					experts, attend interactive workshops, and engage in knowledge-sharing sessions that
+					broaden their perspectives and enhance their technical know-how. Whether you're here to
+					compete, network, or learn, UIU CSE Fest 2025 promises an unforgettable experience. Join
+					us as we celebrate technology, embrace innovation, and empower the tech leaders of
+					tomorrow. Prepare to challenge yourself and make your mark on the future of technology!
+				</p>
+			</div>
+
+			<!-- Image Section -->
+			<div
+				class="w-48 md:w-1/2 md:flex md:justify-center md:items-center mt-6 md:mt-0 mx-auto md:mx-0"
+			>
+				<img src="9910414.png" alt="UIU CSE Fest 2025" class="w-full h-auto object-cover" />
 			</div>
 		</section>
 

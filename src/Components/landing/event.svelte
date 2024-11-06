@@ -19,154 +19,201 @@
 
 <section class=" bg-white min-h-screen" style="">
 	<section class="p-20">
-		<div class="flex space-x-10 px-20 text-black">
-			<div class="grid justify-end h-[50rem] p-5 w-full border border-black/90 rounded-xl">
-				<h1 class="text-[#ff4701]">Event 01</h1>
-				<h1 class="text-6xl font-semibold">
-					1st UIU Inter University Programming Contest (UIU IUPC 2024)
+		<div class="grid grid-cols-1 lg:grid-cols-2 justify-center items-center px-5 lg:px-10 gap-10 mb-5 text-black">
+			<div class=" justify-center  sm:justify-end h-auto sm:h-[50rem] p-5 w-full border border-black/90 rounded-xl">
+				<!-- Event Title -->
+				<h1 class="text-[#ff4701] text-3xl sm:text-4xl font-bold">Event 01</h1>
+				
+				<!-- Event Name -->
+				<h1 class="text-xl sm:text-3xl md:text-6xl font-semibold">
+				  1st UIU Inter University Programming Contest (UIU IUPC 2024)
 				</h1>
-				<h1 class="mt-10 text-xl">Event Date: November 05, 2024</h1>
-				<h1 class="mt-16 text-lg">Lorem ipsum dolor sit amet consectetur, adipisicing elit...</h1>
-				<div>
-					<button class="Btn-Container">
-						<span class="text">Let's Go!</span>
-						<span class="icon-Container">
-							<svg
-								width="16"
-								height="19"
-								viewBox="0 0 16 19"
-								fill="none"
-								xmlns="http://www.w3.org/2000/svg"
-							>
-								<!-- SVG content here -->
-							</svg>
-						</span>
-					</button>
+				
+				<!-- Event Date -->
+				<h1 class="mt-5 sm:mt-10 text-sm sm:text-lg md:text-xl">Event Date: November 05, 2024</h1>
+				
+				<!-- Event Description -->
+				<h1 class="mt-8 sm:mt-16 text-sm sm:text-base md:text-lg">Lorem ipsum dolor sit amet consectetur, adipisicing elit...</h1>
+				
+				<!-- Button Container -->
+				<div class="mt-8">
+				  <button class="Btn-Container  ">
+					<span class="text">Let's Go!</span>
+					<span class="icon-Container">
+					  <svg width="16" height="19" viewBox="0 0 16 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<!-- SVG content here -->
+					  </svg>
+					</span>
+				  </button>
 				</div>
-			</div>
+			  </div>
+			  
+			
+			  
+			  
 			<!-- Add more items as needed -->
-			<div class="grid justify-start h-[50rem] p-5 w-full border border-black/90 rounded-xl">
-				<h1 class="text-[#ff4701]">Event 02</h1>
-				<h1 class="text-6xl font-semibold">Blockchain Olympiad</h1>
-				<h1 class="mt-10 text-xl">Event Date: November 05, 2024</h1>
-				<h1 class="mt-16 text-lg">Lorem ipsum dolor sit amet consectetur, adipisicing elit...</h1>
-				<div>
-					<button class="Btn-Container">
-						<span class="text">Let's Go!</span>
-						<span class="icon-Container">
-							<svg
-								width="16"
-								height="19"
-								viewBox="0 0 16 19"
-								fill="none"
-								xmlns="http://www.w3.org/2000/svg"
-							>
-								<!-- SVG content here -->
-							</svg>
-						</span>
-					</button>
+			<div class="justify-center sm:justify-end h-auto sm:h-[50rem] p-5 w-full border border-black/90 rounded-xl">
+				<!-- Event Title -->
+				<h1 class="text-[#ff4701] text-3xl sm:text-4xl font-bold">Event 02</h1>
+				
+				<!-- Event Name -->
+				<h1 class="text-xl sm:text-3xl md:text-6xl font-semibold">
+				  Blockchain Olympiad
+				</h1>
+				
+				<!-- Event Date -->
+				<h1 class="mt-5 sm:mt-10 text-sm sm:text-lg md:text-xl">Event Date: November 05, 2024</h1>
+				
+				<!-- Event Description -->
+				<h1 class="mt-8 sm:mt-16 text-sm sm:text-base md:text-lg">
+				  Lorem ipsum dolor sit amet consectetur, adipisicing elit...
+				</h1>
+				
+				<!-- Button Container -->
+				<div class="mt-8">
+				  <button class="Btn-Container">
+					<span class="text">Let's Go!</span>
+					<span class="icon-Container">
+					  <svg width="16" height="19" viewBox="0 0 16 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<!-- SVG content here -->
+					  </svg>
+					</span>
+				  </button>
 				</div>
-			</div>
+			  </div>
+			  
 		</div>
 
-		<div class="flex space-x-10 p-20 text-black">
-			<div class="grid justify-end h-[50rem] p-5 w-full border border-black/90 rounded-xl">
-				<h1 class="text-[#ff4701]">Event 03</h1>
-				<h1 class="text-6xl font-semibold">Soccer Bot Competition</h1>
-				<h1 class="mt-10 text-xl">Event Date: November 05, 2024</h1>
-				<h1 class="mt-16 text-lg">Lorem ipsum dolor sit amet consectetur, adipisicing elit...</h1>
-				<div>
-					<button class="Btn-Container">
-						<span class="text">Let's Go!</span>
-						<span class="icon-Container">
-							<svg
-								width="16"
-								height="19"
-								viewBox="0 0 16 19"
-								fill="none"
-								xmlns="http://www.w3.org/2000/svg"
-							>
-								<!-- SVG content here -->
-							</svg>
-						</span>
-					</button>
+		<div class="grid grid-cols-1 lg:grid-cols-2 justify-center items-center px-5 lg:px-10 gap-10 mb-5 text-black">
+			<div class="justify-center sm:justify-end h-auto sm:h-[50rem] p-5 w-full border border-black/90 rounded-xl">
+				<!-- Event Title -->
+				<h1 class="text-[#ff4701] text-3xl sm:text-4xl font-bold">Event 03</h1>
+				
+				<!-- Event Name -->
+				<h1 class="text-xl sm:text-3xl md:text-6xl font-semibold">
+				  Soccer Bot Competition
+				</h1>
+				
+				<!-- Event Date -->
+				<h1 class="mt-5 sm:mt-10 text-sm sm:text-lg md:text-xl">Event Date: November 05, 2024</h1>
+				
+				<!-- Event Description -->
+				<h1 class="mt-8 sm:mt-16 text-sm sm:text-base md:text-lg">
+				  Lorem ipsum dolor sit amet consectetur, adipisicing elit...
+				</h1>
+				
+				<!-- Button Container -->
+				<div class="mt-8">
+				  <button class="Btn-Container">
+					<span class="text">Let's Go!</span>
+					<span class="icon-Container">
+					  <svg width="16" height="19" viewBox="0 0 16 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<!-- SVG content here -->
+					  </svg>
+					</span>
+				  </button>
 				</div>
-			</div>
+			  </div>
+			  
 			<!-- Add more items as needed -->
-			<div class="grid justify-start h-[50rem] p-5 w-full border border-black/90 rounded-xl">
-				<h1 class="text-[#ff4701]">Event 04</h1>
-				<h1 class="text-6xl font-semibold">ICT Olympiad</h1>
-				<h1 class="mt-10 text-xl">Event Date: November 05, 2024</h1>
-				<h1 class="mt-16 text-lg">Lorem ipsum dolor sit amet consectetur, adipisicing elit...</h1>
-				<div>
-					<button class="Btn-Container">
-						<span class="text">Let's Go!</span>
-						<span class="icon-Container">
-							<svg
-								width="16"
-								height="19"
-								viewBox="0 0 16 19"
-								fill="none"
-								xmlns="http://www.w3.org/2000/svg"
-							>
-								<!-- SVG content here -->
-							</svg>
-						</span>
-					</button>
+			<div class="justify-center sm:justify-end h-auto sm:h-[50rem] p-5 w-full border border-black/90 rounded-xl">
+				<!-- Event Title -->
+				<h1 class="text-[#ff4701] text-3xl sm:text-4xl font-bold">Event 04</h1>
+				
+				<!-- Event Name -->
+				<h1 class="text-xl sm:text-3xl md:text-6xl font-semibold">
+				  ICT Olympiad
+				</h1>
+				
+				<!-- Event Date -->
+				<h1 class="mt-5 sm:mt-10 text-sm sm:text-lg md:text-xl">Event Date: November 05, 2024</h1>
+				
+				<!-- Event Description -->
+				<h1 class="mt-8 sm:mt-16 text-sm sm:text-base md:text-lg">
+				  Lorem ipsum dolor sit amet consectetur, adipisicing elit...
+				</h1>
+				
+				<!-- Button Container -->
+				<div class="mt-8">
+				  <button class="Btn-Container">
+					<span class="text">Let's Go!</span>
+					<span class="icon-Container">
+					  <svg width="16" height="19" viewBox="0 0 16 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<!-- SVG content here -->
+					  </svg>
+					</span>
+				  </button>
 				</div>
-			</div>
+			  </div>
+			  
 		</div>
 
-		<div class="flex space-x-10 p-20 text-black">
-			<div class="grid justify-end h-[50rem] p-5 w-full border border-black/90 rounded-xl">
-				<h1 class="text-[#ff4701]">Event 03</h1>
-				<h1 class="text-6xl font-semibold">Soccer Bot Competition</h1>
-				<h1 class="mt-10 text-xl">Event Date: November 05, 2024</h1>
-				<h1 class="mt-16 text-lg">Lorem ipsum dolor sit amet consectetur, adipisicing elit...</h1>
-				<div>
-					<button class="Btn-Container">
-						<span class="text">Let's Go!</span>
-						<span class="icon-Container">
-							<svg
-								width="16"
-								height="19"
-								viewBox="0 0 16 19"
-								fill="none"
-								xmlns="http://www.w3.org/2000/svg"
-							>
-								<!-- SVG content here -->
-							</svg>
-						</span>
-					</button>
+		<div class="grid grid-cols-1 lg:grid-cols-2 justify-center items-center px-5 lg:px-10 gap-10 mb-5 text-black">
+			<div class="justify-center sm:justify-end h-auto sm:h-[50rem] p-5 w-full border border-black/90 rounded-xl">
+				<!-- Event Title -->
+				<h1 class="text-[#ff4701] text-3xl sm:text-4xl font-bold">Event 05</h1>
+				
+				<!-- Event Name -->
+				<h1 class="text-xl sm:text-3xl md:text-6xl font-semibold">
+				  Soccer Bot Competition
+				</h1>
+				
+				<!-- Event Date -->
+				<h1 class="mt-5 sm:mt-10 text-sm sm:text-lg md:text-xl">Event Date: November 05, 2024</h1>
+				
+				<!-- Event Description -->
+				<h1 class="mt-8 sm:mt-16 text-sm sm:text-base md:text-lg">
+				  Lorem ipsum dolor sit amet consectetur, adipisicing elit...
+				</h1>
+				
+				<!-- Button Container -->
+				<div class="mt-8">
+				  <button class="Btn-Container">
+					<span class="text">Let's Go!</span>
+					<span class="icon-Container">
+					  <svg width="16" height="19" viewBox="0 0 16 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<!-- SVG content here -->
+					  </svg>
+					</span>
+				  </button>
 				</div>
-			</div>
+			  </div>
+			  
 			<!-- Add more items as needed -->
-			<div class="grid justify-start h-[50rem] p-5 w-full border border-black/90 rounded-xl">
-				<h1 class="text-[#ff4701]">Event 04</h1>
-				<h1 class="text-6xl font-semibold">ICT Olympiad</h1>
-				<h1 class="mt-10 text-xl">Event Date: November 05, 2024</h1>
-				<h1 class="mt-16 text-lg">Lorem ipsum dolor sit amet consectetur, adipisicing elit...</h1>
-				<div>
-					<button class="Btn-Container">
-						<span class="text">Let's Go!</span>
-						<span class="icon-Container">
-							<svg
-								width="16"
-								height="19"
-								viewBox="0 0 16 19"
-								fill="none"
-								xmlns="http://www.w3.org/2000/svg"
-							>
-								<!-- SVG content here -->
-							</svg>
-						</span>
-					</button>
+			<div class="justify-center sm:justify-end h-auto sm:h-[50rem] p-5 w-full border border-black/90 rounded-xl">
+				<!-- Event Title -->
+				<h1 class="text-[#ff4701] text-3xl sm:text-4xl font-bold">Event 06</h1>
+				
+				<!-- Event Name -->
+				<h1 class="text-xl sm:text-3xl md:text-6xl font-semibold">
+				  ICT Olympiad
+				</h1>
+				
+				<!-- Event Date -->
+				<h1 class="mt-5 sm:mt-10 text-sm sm:text-lg md:text-xl">Event Date: November 05, 2024</h1>
+				
+				<!-- Event Description -->
+				<h1 class="mt-8 sm:mt-16 text-sm sm:text-base md:text-lg">
+				  Lorem ipsum dolor sit amet consectetur, adipisicing elit...
+				</h1>
+				
+				<!-- Button Container -->
+				<div class="mt-8">
+				  <button class="Btn-Container">
+					<span class="text">Let's Go!</span>
+					<span class="icon-Container">
+					  <svg width="16" height="19" viewBox="0 0 16 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<!-- SVG content here -->
+					  </svg>
+					</span>
+				  </button>
 				</div>
-			</div>
+			  </div>
+			  
 		</div>
 		<div class=" p-20">
 			<div class="w-full grid justify-center">
-				<h1 class="text-black">Sponsors</h1>
+				<h1 class="text-black ">Sponsors</h1>
 				<img src="Logos.png" class="w-[70rem]" alt="" />
 			</div>
 			<div class=" flex space-x-10 justify-center mt-20">

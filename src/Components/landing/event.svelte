@@ -258,20 +258,20 @@
 					<img src="Logos.png" class="md:w-[70rem]" alt="" />
 				</div>
 			</div>
-			<div class=" flex space-x-10 justify-center mt-20">
+			<div class=" md:flex md:space-x-10 space-y-4 md:space-y-0 justify-center mt-20">
 				<img
 					src="uiu1.jpg"
-					class="w-1/3 rounded-xl opacity-60 hover:opacity-100 transition-all border border-white/30 aspect-square"
+					class="md:w-1/3 rounded-xl opacity-60 hover:opacity-100 transition-all border border-white/30 aspect-square"
 					alt=""
 				/>
 				<img
 					src="uiu2.jpg"
-					class="w-1/3 rounded-xl opacity-60 hover:opacity-100 transition-all border border-white/30 translate-y-20 aspect-square"
+					class="md:w-1/3 rounded-xl opacity-60 hover:opacity-100 transition-all border border-white/30   md:translate-y-20 aspect-square"
 					alt=""
 				/>
 				<img
 					src="uiu3.jpg"
-					class="w-1/3 rounded-xl opacity-60 hover:opacity-100 transition-all border border-white/30 aspect-square"
+					class="md:w-1/3 rounded-xl opacity-60 hover:opacity-100 transition-all border border-white/30 aspect-square"
 					alt=""
 				/>
 			</div>
@@ -285,13 +285,13 @@
 	<div class="w-full min-h-screen bg-black">
 		<div class=" p-10">
 			<div class="mt-5 flex flex-col md:flex-row items-center space-x-10">
-				<img src="vc_sir.jpg" class="md:w-1/3 rounded-xl" alt="" />
+				<img src="vc_sir.jpg" class="w-[180px] md:w-1/3 rounded-xl" alt="" />
 
 				<div>
-					<h1 class=" mb-10 text-4xl font-bold">Speech of the Honorable Vice Chancellor</h1>
+					<h1 class=" mb-10 mt-2 text-xl text-center md:text-4xl font-bold">Speech of the Honorable Vice Chancellor</h1>
 					<div class=" border rounded-xl p-10">
 						<h1>
-							<span class="text-3xl">"</span>Dear students, esteemed faculty, distinguished guests,
+							<span class="text-center text-sm md:text-3xl">"</span>Dear students, esteemed faculty, distinguished guests,
 							and members of the tech community, It is with great pleasure and immense pride that I
 							stand before you today at the UIU CSE FEST 2025, a celebration of innovation,
 							creativity, and collaboration in the field of computer science and engineering. This

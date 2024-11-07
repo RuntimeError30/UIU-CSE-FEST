@@ -1,101 +1,83 @@
 <script>
 	import { onMount } from 'svelte';
-	import { fade, scale } from 'svelte/transition';
-
+  
 	let lastScrollTop = 0;
 	let isScrollingUp = true;
-	let isShown = false;
-
+	let isMenuOpen = false;
+  
+	
 	function handleScroll() {
-		const currentScrollTop = window.scrollY;
-		isScrollingUp = currentScrollTop <= lastScrollTop;
-		lastScrollTop = currentScrollTop;
+	  const currentScrollTop = window.scrollY;
+	  isScrollingUp = currentScrollTop <= lastScrollTop;
+	  lastScrollTop = currentScrollTop;
 	}
-
-	function toggleVisibility() {
-		isShown = !isShown;
+  
+	
+	function toggleMenu() {
+	  isMenuOpen = !isMenuOpen;
 	}
+  
 
+	function closeMenu() {
+	  isMenuOpen = false;
+	}
+  
 	onMount(() => {
-		window.addEventListener('scroll', handleScroll);
-		return () => window.removeEventListener('scroll', handleScroll);
+	  window.addEventListener('scroll', handleScroll);
+	  return () => window.removeEventListener('scroll', handleScroll);
 	});
-</script>
-
-<section
-	class={`z-50 fixed inset-0 transition-transform backdrop-blur-lg duration-[900ms] ${isScrollingUp ? 'translate-y-0' : '-translate-y-full'}`}
->
-	<nav class="px-10 flex justify-between items-center">
-		<div class="font-bold">
-			<img src="/blacklogo.png" class="w-32" alt="Logo" />
+  </script>
+  
+  <section
+	class={`z-50 fixed inset-0 transition-transform   ${isScrollingUp ? 'translate-y-0' : '-translate-y-full'}`}
+  >
+	<nav class="px-6 sm:px-10 flex justify-between items-center relative">
+	  <!-- Logo -->
+	  <div class="font-bold">
+		<img src="/blacklogo.png" class="w-24 md:w-32" alt="Logo" />
+	  </div>
+  
+	  <!-- Hamburger Button for Mobile  -->
+	  <button
+		class="sm:hidden flex flex-col justify-center items-center space-y-2 w-8 h-8"
+		on:click={toggleMenu}
+	  >
+		<div class="w-full h-1 bg-black"></div>
+		<div class="w-full h-1 bg-black"></div>
+		<div class="w-full h-1 bg-black"></div>
+	  </button>
+  
+	  <!-- Desktop Menu  -->
+	  <ul class="hidden sm:flex space-x-12 items-center text-black text-sm">
+		<li><a href="">Home</a></li>
+		<li><a href="">About</a></li>
+		<li><a href="">Events</a></li>
+		<li><a href="">Announcements</a></li>
+		<li><a href="">FAQ</a></li>
+		<li><a href="">Contact</a></li>
+	  </ul>
+  
+	  <!-- Mobile Menu -->
+	  {#if isMenuOpen}
+		<div class="sm:hidden absolute top-0 left-0 w-full h-full bg-white bg-opacity-90 p-4">
+		
+		  <button
+			class="absolute top-4 right-4 text-black text-5xl"
+			on:click={closeMenu}
+		  >
+			&times;
+		  </button>
+  
+		  <ul class="space-y-2 text-black text-sm">
+			<li><a href="">Home</a></li>
+			<li><a href="">About</a></li>
+			<li><a href="">Events</a></li>
+			<li><a href="">Announcements</a></li>
+			<li><a href="">FAQ</a></li>
+			<li><a href="">Contact</a></li>
+		  </ul>
 		</div>
-		<ul class="flex space-x-16  items-center text-black text-sm">
-		
-	
-				
-					<li><a href="">Home</a></li>
-					<li><a href="">About</a></li>
-					<li><a href="">Events</a></li>
-					<li><a href="">Announcements</a></li>
-					<li><a href="">FAQ</a></li>
-					<li><a href="">Contact</a></li>
-			
-	
-		
-		</ul>
+	  {/if}
 	</nav>
-</section>
-
-<!-- {#if isShown}
-	<div class="fixed z-10 w-full flex justify-center">
-		<div
-			in:fade={{ duration: 300 }}
-			out:fade={{ duration: 200 }}
-			class="absolute grid w-[40%] top-10 h-[50rem] bg-black/50 backdrop-blur-xl rounded-3xl p-10 overflow-hidden z-10"
-		>
-			<div class="w-full h-fit flex justify-end">
-				<button class="border border-white/30 p-5" on:click={toggleVisibility}>
-					<svg
-						xmlns="http://www.w3.org/2000/svg"
-						width="24"
-						height="24"
-						viewBox="0 0 24 24"
-						fill="none"
-						stroke="#ffffff"
-						stroke-width="2"
-						stroke-linecap="round"
-						stroke-linejoin="round"
-						class="lucide lucide-x"
-					>
-						<path d="M18 6 6 18" />
-						<path d="m6 6 12 12" />
-					</svg>
-				</button>
-			</div>
-			<div>
-				<h1>UIU CSE FEST 2025</h1>
-				<h1 class="text-7xl font-extrabold">Menu</h1>
-			</div>
-			<div>
-				<ul class="space-y-5 text-xl">
-					<li><a href="">Home</a></li>
-					<li><a href="">About</a></li>
-					<li><a href="">Events</a></li>
-					<li><a href="">Announcements</a></li>
-					<li><a href="">FAQ</a></li>
-					<li><a href="">Contact</a></li>
-				</ul>
-			</div>
-		</div>
-	</div>
-{/if} -->
-
-<style>
-	section {
-		top: 0;
-		left: 0;
-		width: 100%;
-		z-index: 10;
-		height: fit-content;
-	}
-</style>
+  </section>
+  
